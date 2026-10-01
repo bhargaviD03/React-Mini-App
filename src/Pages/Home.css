@@ -1,0 +1,164 @@
+.Hero {
+    min-height: 80vh;
+    padding: 150px 50px 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+
+    background-image:
+        linear-gradient(
+            rgba(90, 50, 180, 0.7),
+            rgba(230, 70, 150, 0.6)
+        ),
+        url("../Assests/laptop.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.Hero h1 {
+    max-width: 650px;
+    margin: 30px auto 20px;
+    font-size: 45px;
+}
+
+.Hero p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 120px;
+    z-index: 1000;
+}
+
+.hero-content div {
+    width: 300px;
+    padding: 25px;
+    height: 250px;
+    background: white;
+    border-radius: 25px;
+    color: #333;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.hero-content img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--purple);
+    border-radius: 50%;
+}
+
+.hero-content div:hover img {
+    background-color: #ff4f91;
+}
+
+.hero-content h2 {
+    font-size: 20px;
+}
+
+.hero-content p {
+    color: #777;
+    line-height: 1.5;
+}
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .Hero {
+        min-height: auto;
+        padding: 90px 15px 50px;
+        background-position: center;
+    }
+
+    .Hero h1 {
+        max-width: 100%;
+        margin: 20px auto 15px;
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .Hero > p {
+        max-width: 100%;
+        margin: 0 auto 20px;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .hero-content div {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        min-height: 230px;
+        padding: 20px 15px;
+        margin: 0;
+        border-radius: 20px;
+    }
+
+    .hero-content img {
+        width: 65px;
+        height: 65px;
+        padding: 8px;
+    }
+
+    .hero-content h2 {
+        font-size: 18px;
+        margin: 12px 0 8px;
+    }
+
+    .hero-content p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 319px) {
+
+    .Hero {
+        padding: 80px 10px 40px;
+    }
+
+    .Hero h1 {
+        font-size: 26px;
+    }
+
+    .Hero > p {
+        font-size: 13px;
+    }
+
+    .hero-content {
+        margin-top: 30px;
+    }
+
+    .hero-content div {
+        width: 100%;
+        padding: 18px 12px;
+    }
+
+    .hero-content h2 {
+        font-size: 17px;
+    }
+
+    .hero-content p {
+        font-size: 13px;
+    }
+}

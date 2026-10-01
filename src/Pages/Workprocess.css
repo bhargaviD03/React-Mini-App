@@ -1,0 +1,127 @@
+.Heros{
+    min-height: 50vh;
+    padding: 50px 50px 80px;
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+
+    background-image:
+        linear-gradient(rgba(163, 10, 183, 0.7)),
+        url("../Assests/laptop.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+.Heros h1 {
+    max-width: 650px;
+    margin: 30px auto 20px;
+    font-size: 45px;
+}
+
+
+.Heros p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    line-height: 1.6;
+}
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+.content div {
+    width: 300px;
+    padding: 25px;
+    height: 250px;
+    background: white;
+    border-radius: 25px;
+    color: #333;
+    margin: 10px;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.content div:hover {
+    transform: translateY(-15px) scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.content img {
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.content h2 {
+    font-size: 20px;
+}
+
+.content p {
+    color: #777;
+    line-height: 1.5;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .Heros {
+        min-height: auto;
+        padding: 70px 15px 40px;
+    }
+
+    .Heros h1 {
+        font-size: 28px;
+        line-height: 1.2;
+        margin: 20px auto 15px;
+    }
+
+    .Heros p {
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 0 5px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .content div {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        min-height: 220px;
+        padding: 20px 15px;
+        margin: 0;
+        border-radius: 20px;
+    }
+
+    .content img {
+        width: 70px;
+        height: 70px;
+        padding: 8px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .content p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
