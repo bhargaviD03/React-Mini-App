@@ -15,28 +15,55 @@ export default function Footer() {
 
       <div className="social-icons">
 
-        <a href="#" className="social-icon">
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="social-icon"
+        >
           <FaFacebookF />
         </a>
 
-        <a href="#" className="social-icon">
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="social-icon"
+        >
           <FaTwitter />
         </a>
 
-        <a href="#" className="social-icon">
+        <a
+          href="https://www.linkedin.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="social-icon"
+        >
           <FaLinkedinIn />
         </a>
 
-        <a href="#" className="social-icon">
+        <a
+          href="/rss"
+          className="social-icon"
+        >
           <FaRss />
         </a>
 
-        <a href="#" className="social-icon">
+        <a
+          href="https://dribbble.com/"
+          target="_blank"
+          rel="noreferrer"
+          className="social-icon"
+        >
           <FaDribbble />
         </a>
+
       </div>
-        <div className="line"></div>
-        <p>Copyright © 2020 Softy Pinko Company - Design: TemplateMo</p>
+
+      <div className="line"></div>
+
+      <p>Copyright © 2020 Softy Pinko Company - Design: TemplateMo</p>
+
     </footer>
   );
 }
